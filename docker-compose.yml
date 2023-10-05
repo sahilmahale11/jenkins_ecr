@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: node:latest
+    image: node:598534455468.dkr.ecr.us-west-2.amazonaws.com/test1:r6
     container_name: app_main
     restart: always
     command: sh -c "yarn install && yarn start"
@@ -16,11 +16,11 @@ services:
       MYSQL_PASSWORD: 
       MYSQL_DB: test
   mongo:
-    image: mongo
-    container_name: app_mongo_1
+    image: mongo:598534455468.dkr.ecr.us-west-2.amazonaws.com/test1:r6
+    container_name: app_mongo
     restart: always
     ports:
-      - 27017:27018
+      - 27017:27017
     volumes:
       - ~/mongo:/data/db
 volumes:
