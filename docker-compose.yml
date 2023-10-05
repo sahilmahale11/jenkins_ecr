@@ -17,10 +17,10 @@ services:
       MYSQL_DB: test
   mongo:
     image: mongo
-    container_name: app_mongo
+    container_name: app_mongo_1
     restart: always
     ports:
-      - 27017:27017
+      - 27017:27018
     volumes:
       - ~/mongo:/data/db
 volumes:
