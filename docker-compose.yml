@@ -20,7 +20,7 @@ services:
   mongo:
     image: mongo
     tag:
-      598534455468.dkr.ecr.us-west-2.amazonaws.com/test1:r3
+      name: 598534455468.dkr.ecr.us-west-2.amazonaws.com/test1:r3
     container_name: app_mongo
     restart: always
     ports:
